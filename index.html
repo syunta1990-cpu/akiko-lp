@@ -73,7 +73,13 @@
       color:#fff;font-weight:900;
       box-shadow:0 12px 22px rgba(124,58,237,.22);
     }
-    .brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.02em}
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      font-weight:900;
+      letter-spacing:.02em;
+    }
     nav{display:flex;gap:14px;flex-wrap:wrap;justify-content:flex-end}
     nav a{font-size:14px;color:var(--muted)}
     nav a:hover{color:var(--text)}
@@ -195,20 +201,6 @@
       line-height:1.95;
       font-size:15px;
       text-shadow: 0 12px 26px rgba(0,0,0,.34);
-    }
-    .top-meta{
-      margin-top:16px;
-      display:flex;gap:10px;flex-wrap:wrap;
-    }
-    .chip{
-      border:1px solid rgba(255,255,255,.18);
-      background:rgba(255,255,255,.10);
-      border-radius:999px;
-      padding:8px 10px;
-      color:rgba(255,255,255,.92);
-      font-size:13px;
-      line-height:1;
-      backdrop-filter: blur(10px);
     }
 
     /* Sections */
@@ -348,14 +340,14 @@
   <header>
     <div class="container">
       <div class="header-inner">
-        <div class="brand">
+        <a href="#top" class="brand" aria-label="トップへ戻る">
           <span class="badge">A</span>
           <span>AKIKO METHOD</span>
-        </div>
+        </a>
 
         <nav>
           <a href="#mission">会社の思い</a>
-          <a href="#outcome">受講後どうなれる？</a>
+          <a href="#outcome">受講で得られる変化</a>
           <a href="#course">講座について</a>
           <a href="#faq">FAQ</a>
           <a href="#price">料金</a>
@@ -386,12 +378,6 @@
             多領域で“実践できる形”に落とし込んだ講座を提供しています。
           </p>
 
-          <div class="top-meta reveal is-visible delay-3">
-            <span class="chip">6ヶ月（各回3時間×月1回）</span>
-            <span class="chip">主領域を2つ選択</span>
-            <span class="chip">代表者情報・料金を公開</span>
-          </div>
-
           <div class="btns reveal is-visible delay-3">
             <a class="btn btn-primary" href="#" id="ctaHero1" target="_blank" rel="noopener">講座に申し込む</a>
             <a class="btn btn-ghost" href="#price">料金を見る</a>
@@ -419,7 +405,7 @@
       </div>
     </section>
 
-    <!-- 受講後どうなれる -->
+    <!-- 受講で得られる変化 -->
     <section id="outcome" class="reveal">
       <div class="container">
         <div class="section-head">
